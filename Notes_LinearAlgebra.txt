@@ -1,0 +1,23 @@
+Essence of Linear Algebra
+https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab
+
+
+Linear transformations are a way to move around space, such that the grid lines remain parallel and evenly spaced, and such that the origin remains fixed.
+These transformations can be described using only a handful of numbers. The coordinates of where each basis vector lands.
+Matrices give us a language to describe these transformations, where the columns represent those coordinates and matrix-vector multiplication is just a way to compute what that transformation does to a given vector.
+Every time you see a matrix, you can interpret it as a certain transformation of space.
+
+
+Matrix multiplication as composition
+
+M1M2≠M2M1
+(AB)C=A(BC)
+
+
+Transformations which do preserve dot products are special enough to have their own name: orthonormal transformations. 
+Orthonormal transformations are which leave all the basis vectors perpendicular to each other and sill with unit length. 
+Often think of these as rotation matrices. 
+They correspond to rigid motion, with no stretching, squishing or morphing.
+Solving a linear system with an orthonormal matrix is very easy: 
+Since dot products are preserved, taking the dot product between the output vector and all the columns of your matrix will be the same as taking the dot products between the input vector and all of the basis vectors, which is the same as finding the coordinates of the input vector.
+So, in that very special case, x would be the dot product of the first column with the out put vector, and y would be the dot product of the second column with the output vector. 
